@@ -43,6 +43,7 @@ presidentData = ["1993, 2000, Bill Clinton", "2001, 2008, George W. Bush", "2009
 	* b. Print a list of all movie names, preferably on one line.
 
 	* c. Print a list of all movie years and names as follows:
+	
 > 2015: Minions
 > 2001: Shrek
 > .
