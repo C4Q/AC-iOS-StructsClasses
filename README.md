@@ -14,7 +14,7 @@ Let's create a movie object based on the data structure we used in [Homework #2]
  Choose a **macOS** template.
  Make sure to select **Command Line Tool**.
  
- ![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/images/Screen Shot 2017-07-10 at 5.24.02 PM.png)
+ ![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screen%20Shot%202017-07-10%20at%205.24.02%20PM.png)
 
 2. Name your project: **AC-iOS-StructsClasses**
 
