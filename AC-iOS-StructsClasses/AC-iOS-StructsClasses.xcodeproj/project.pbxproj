@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A5D93881F14282700BF7B81 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93871F14282700BF7B81 /* main.swift */; };
+		3A5D93911F14653C00BF7B81 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93901F14653C00BF7B81 /* Movie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		3A5D93841F14282700BF7B81 /* AC-iOS-StructsClasses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AC-iOS-StructsClasses"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5D93871F14282700BF7B81 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3A5D93901F14653C00BF7B81 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		3A5D93861F14282700BF7B81 /* AC-iOS-StructsClasses */ = {
 			isa = PBXGroup;
 			children = (
+				3A5D93901F14653C00BF7B81 /* Movie.swift */,
 				3A5D93871F14282700BF7B81 /* main.swift */,
 			);
 			path = "AC-iOS-StructsClasses";
@@ -121,6 +124,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A5D93911F14653C00BF7B81 /* Movie.swift in Sources */,
 				3A5D93881F14282700BF7B81 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
