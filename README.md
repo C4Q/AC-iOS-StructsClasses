@@ -55,27 +55,31 @@ Let's create a movie object based on the data structure we used in [Homework #2]
  		Shrek: ["Mike Myers", "Eddie Murphy", "Cameron Diaz"]
  		```
 
-#### Solution to Part 1 in [Movie_Struct Branch](https://github.com/C4Q/AC-iOS-StructsClasses/tree/Movie_Struct)
+#### Find the Solution to Part 1 in the Movie_Struct branch of this repo.
 
 ---
+
+### Part 2 - Actors are People Too!
 4. Add a new file: **Person.swift** 
 	* Repeat instructions in step 1, naming your file `Person` (instead of `Movie`)
 5. Create a `Person` class *(inside of Person.swift)*. 
 6. Add a new file: **Actor.swift** 
 	* Repeat instructions in step 1, naming your file `Actor` (instead of `Movie`)
 7. Create an `Actor` class with `Person` as its parent *(inside of Actor.swift)*. Add two properties, `breakoutYear` and  `breakoutRole`. 
+11. Work the `Actor` class into the `Movie` object by making `cast` type `[Actor]` and populating it.
+12. Make the `genre` field in `Movie` of type `Genre`, an enumeration.
+
+
 8. Add a new file: **President.swift** 
 	* Repeat instructions in step 1, naming your file `President` (instead of `Movie`)
 9. Create a `President` class with `Person` as its parent *(inside of President.swift)*. Add two properties, `yearEnteredOffice` and `yearLeftOffice`.
 10. Now that we have a `President` class, let's create an instance method `inOffice(Int) -> Bool`.
-11. Work the `Actor` class into the `Movie` object by making `cast` type `[Actor]` and populating it.
-12. Make the `genre` field in `Movie` of type `Genre`, an enumeration.
 13. Build a `presidents` array (of type: [President]) by processing this array of Strings:
 
 	```swift
 	presidentData = ["1993, 2000, Bill Clinton", "2001, 2008, George W. Bush", "2009, 2016, Barack Obama"]
 	```
-
+	
 14. Build the `presidentsByYear` dictionary based on the `presidents` array. Your output dictionary should contain a key for every relevant year and use the `inOffice` method on `President`.
 15. Re-work the original homework based on our "array of dictionaries" to work with the new array of objects. Here are the problems:
 
