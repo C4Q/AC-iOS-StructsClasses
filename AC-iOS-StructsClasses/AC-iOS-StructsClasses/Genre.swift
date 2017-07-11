@@ -9,5 +9,7 @@
 import Foundation
 
 enum Genre {
-    
+   case animation
+    case action
+    case drama
 }

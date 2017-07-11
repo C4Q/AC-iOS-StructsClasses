@@ -9,5 +9,12 @@
 import Foundation
 
 class Actor: Person {
+    var breakoutYear: Int
+    var breakoutRole: String
     
+    init(breakoutYear: Int, breakoutRole: String, name: String, birthYear: Int, deathYear: Int?) {
+        self.breakoutYear = breakoutYear
+        self.breakoutRole = breakoutRole
+        super.init(name: name, birthYear: birthYear, deathYear: deathYear ?? nil)
+    }
 }
