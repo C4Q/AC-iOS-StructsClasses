@@ -14,36 +14,40 @@ Let's create a movie object based on the data structure we used in [Homework #2]
  Choose a **macOS** template.
  Make sure to select **Command Line Tool**. Click Next.
  
- ![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screen%20Shot%202017-07-10%20at%205.24.02%20PM.png)
+ ![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screeshot_Command%20Line%20Mac%20Project.png)
 
 2. Name your project: **AC-iOS-StructsClasses**
 
-![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screen%20Shot%202017-07-10%20at%205.24.39%20PM.png)
+ ![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screenshot_Naming%20a%20Project.png)
 
 #### Instructions
 
 
 1. Create a new file named **Movie.swift**. 
+
 	*File -> New -> File*
 
+	![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screenshot_File%20New%20File.png)
 
 	*Choose Swift File*
 
-1. Create a new file named **Movie.swift**.
+	![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screenshot_Choose%20Swift%20Source%20File.png)
+
 2. Create a `Movie` struct using variables as existing types with default values.
 3. Populate an array of `Movie` objects converted from the familiar array of dictionaries.
 4. Create a `Person` class.
 5. Create an `Actor` class with `Person` as its parent. Add two fields, `breakoutYear` and  `breakoutRole`. 
 6. Create a `President` class with `Person` as its parent. Add two fields, `yearEnteredOffice` and `yearLeftOffice`.
-7. Now that we have a `President` class, let's create an instance method ```inOffice(Int) -> Bool```.
-8. Work the `Actor` class into the `Movie` object by making ```cast``` type `[Actor]` and populating it.
-9. Make the ```genre``` field in `Movie` of type ```Genre```, an enumeration.
-10. Build a ```presidents``` array (of type: [President]) by processing this array of Strings:
+7. Now that we have a `President` class, let's create an instance method `inOffice(Int) -> Bool`.
+8. Work the `Actor` class into the `Movie` object by making `cast` type `[Actor]` and populating it.
+9. Make the `genre` field in `Movie` of type `Genre`, an enumeration.
+10. Build a `presidents` array (of type: [President]) by processing this array of Strings:
 
 ```swift
 presidentData = ["1993, 2000, Bill Clinton", "2001, 2008, George W. Bush", "2009, 2016, Barack Obama"]
 ```
-11. Rebuild the ```presidentsByYear``` dictionary based on the ```presidents``` array. Your output dictionary should contain a key for every relevant year and use the ```inOffice``` method on ```President```.
+
+11. Rebuild the `presidentsByYear` dictionary based on the `presidents` array. Your output dictionary should contain a key for every relevant year and use the `inOffice` method on `President`.
 12. Re-work the original homework based on our "array of dictionaries" to work with the new array of objects. Here are the problems:
 
 	* 12a. Print the name of the first movie.
