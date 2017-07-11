@@ -22,7 +22,12 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 
 #### Instructions
 
-1. Create a new file named **Movie.swift**.
+1. Create a new file named **Movie.swift**. 
+	*File -> New -> File*
+
+
+	*Choose Swift File*
+
 1. Create a `Movie` struct using variables as existing types with default values.
 1. Populate an array of `Movie` objects converted from the familiar array of dictionaries.
 1. Create a `Person` class.
