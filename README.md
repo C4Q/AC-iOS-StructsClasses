@@ -20,8 +20,9 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 
  ![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screenshot_Naming%20a%20Project.png)
 
-#### Instructions
+ ---
 
+### Part 1: Movie Struct
 
 1. Add a new file: **Movie.swift**. 
 
@@ -38,7 +39,25 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 	![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screenshot_Naming%20A%20Swift%20File.png)
 
 2. Create a `Movie` struct *(inside of Movie.swift)* using variables as existing types with default values.
-3. Populate an array of `Movie` objects converted from the familiar array of dictionaries.
+3. Populate an array of `Movie` structs converted from the familiar array of dictionaries.
+ 	* For each movie in the `Movie` array, print the name of each movie and associated cast on a single line. Be sure not to print the array of cast members, only the string elements. Example:
+
+ 		```
+ 		//Expeted Output:
+ 		Minions: Sandra Bullock, Jon Hamm, Michael Keaton
+ 		Shrek: Mike Myers, Eddie Murphy, Cameron Diaz
+ 		.
+ 		.
+ 		.
+
+ 		//Unexpected Output:
+ 		Minions: ["Sandra Bullock", "Jon Hamm", "Michael Keaton"]
+ 		Shrek: ["Mike Myers", "Eddie Murphy", "Cameron Diaz"]
+ 		```
+
+#### Solution to Part 1 in [Movie_Struct Branch](https://github.com/C4Q/AC-iOS-StructsClasses/tree/Movie_Struct)
+
+---
 4. Add a new file: **Person.swift** 
 	* Repeat instructions in step 1, naming your file `Person` (instead of `Movie`)
 5. Create a `Person` class *(inside of Person.swift)*. 
@@ -57,17 +76,21 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 	presidentData = ["1993, 2000, Bill Clinton", "2001, 2008, George W. Bush", "2009, 2016, Barack Obama"]
 	```
 
-14. Rebuild the `presidentsByYear` dictionary based on the `presidents` array. Your output dictionary should contain a key for every relevant year and use the `inOffice` method on `President`.
+14. Build the `presidentsByYear` dictionary based on the `presidents` array. Your output dictionary should contain a key for every relevant year and use the `inOffice` method on `President`.
 15. Re-work the original homework based on our "array of dictionaries" to work with the new array of objects. Here are the problems:
 
 	* 15a. Print the name of the first movie.
 
 	* 15b. Print a list of all movie names, preferably on one line.
 
-	* 15c. Print a list of all movie years and names (each on a new line) as follows: **Year: Title**
+	* 15c. Print a list of all movie years and names (each on a new line) as follows:
 
 		```
-		TEST
+		2015: Minions
+		2001: Shrek
+		.
+		.
+		.
 		```
 
 	* 15d. Iterate over all movies. Inside the loop use switch on `genre`. Print each title and add an appropriate emoji to represent its genre.
