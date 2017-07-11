@@ -2,7 +2,7 @@
 
 ---
 
-[Link to Structs & Classes Lesson](https://github.com/C4Q/AC3.2/blob/master/lessons/unit1/structs-and-classes/README.md)
+Link to [Structs & Classes Lesson](https://github.com/C4Q/AC3.2/blob/master/lessons/unit1/structs-and-classes/README.md)
 
 ### Movie as an Object
 
@@ -23,7 +23,7 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 #### Instructions
 
 
-1. Create a new file named **Movie.swift**. 
+1. Create a new file: **Movie.swift**. 
 
 	*File -> New -> File*
 
@@ -33,7 +33,11 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 
 	![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screenshot_Choose%20Swift%20Source%20File.png)
 
-2. Create a `Movie` struct using variables as existing types with default values.
+	*Name your file* **Movie**
+
+	![alt text](https://github.com/C4Q/AC-iOS-StructsClasses/blob/solution/images/Screenshot_Naming%20A%20Swift%20File.png)
+
+2. Create a `Movie` struct, *inside of Movie.swift*, using variables as existing types with default values.
 3. Populate an array of `Movie` objects converted from the familiar array of dictionaries.
 4. Create a `Person` class.
 5. Create an `Actor` class with `Person` as its parent. Add two fields, `breakoutYear` and  `breakoutRole`. 
