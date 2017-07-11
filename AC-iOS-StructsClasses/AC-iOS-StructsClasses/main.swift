@@ -88,8 +88,3 @@ for movieDict in movies {
 }
 print(swiftMovies)
 
-let obama = President(yearEntered: 2000, yearLeft: 2008)
-
-print(obama.inOffice(1990))
-print(obama.inOffice(2008))
-

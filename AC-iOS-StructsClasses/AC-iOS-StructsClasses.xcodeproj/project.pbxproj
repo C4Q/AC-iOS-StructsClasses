@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		3A5D93881F14282700BF7B81 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93871F14282700BF7B81 /* main.swift */; };
 		3A5D93911F14653C00BF7B81 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93901F14653C00BF7B81 /* Movie.swift */; };
-		3A5D93931F153F0A00BF7B81 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93921F153F0A00BF7B81 /* Person.swift */; };
-		3A5D93951F153F4600BF7B81 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93941F153F4600BF7B81 /* Actor.swift */; };
-		3A5D93971F15419600BF7B81 /* President.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93961F15419600BF7B81 /* President.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,9 +27,6 @@
 		3A5D93841F14282700BF7B81 /* AC-iOS-StructsClasses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "AC-iOS-StructsClasses"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A5D93871F14282700BF7B81 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3A5D93901F14653C00BF7B81 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
-		3A5D93921F153F0A00BF7B81 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		3A5D93941F153F4600BF7B81 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
-		3A5D93961F15419600BF7B81 /* President.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = President.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +61,6 @@
 			children = (
 				3A5D93871F14282700BF7B81 /* main.swift */,
 				3A5D93901F14653C00BF7B81 /* Movie.swift */,
-				3A5D93921F153F0A00BF7B81 /* Person.swift */,
-				3A5D93941F153F4600BF7B81 /* Actor.swift */,
-				3A5D93961F15419600BF7B81 /* President.swift */,
 			);
 			path = "AC-iOS-StructsClasses";
 			sourceTree = "<group>";
@@ -133,11 +124,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A5D93931F153F0A00BF7B81 /* Person.swift in Sources */,
 				3A5D93911F14653C00BF7B81 /* Movie.swift in Sources */,
 				3A5D93881F14282700BF7B81 /* main.swift in Sources */,
-				3A5D93951F153F4600BF7B81 /* Actor.swift in Sources */,
-				3A5D93971F15419600BF7B81 /* President.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
