@@ -245,75 +245,75 @@ var actorData: [[String:[String:Any]]] = [
             "death_year" : NSNull()
         ]
     ],
-    // MARK: TO-DO Continue editing actors below this point 
+ 
     [
         "Kate Winslet" : [
-            "birth_year" : 1964,
-            "breakout_year" : 1987,
-            "breakout_role" : "Hangmen",
+            "birth_year" : 1975,
+            "breakout_year" : 1994,
+            "breakout_role" : "Heavenly Creatures",
             "death_year" : NSNull()
         ]
     ],
     
     [
         "Billy Zane" : [
-            "birth_year" : 1964,
-            "breakout_year" : 1987,
-            "breakout_role" : "Hangmen",
+            "birth_year" : 1966,
+            "breakout_year" : 1985,
+            "breakout_role" : "Back to the Future",
             "death_year" : NSNull()
         ]
     ],
     
     [
         "Jennifer Lawrence" : [
-            "birth_year" : 1964,
-            "breakout_year" : 1987,
-            "breakout_role" : "Hangmen",
+            "birth_year" : 1990,
+            "breakout_year" : 2007,
+            "breakout_role" : "The Bill Engvall Show",
             "death_year" : NSNull()
         ]
     ],
     
     [
         "Josh Hutcherson" : [
-            "birth_year" : 1964,
-            "breakout_year" : 1987,
-            "breakout_role" : "Hangmen",
+            "birth_year" : 1992,
+            "breakout_year" : 2002,
+            "breakout_role" : "Houseblend",
             "death_year" : NSNull()
         ]
     ],
     
     [
         "Liam Hemsworth" : [
-            "birth_year" : 1964,
-            "breakout_year" : 1987,
-            "breakout_role" : "Hangmen",
+            "birth_year" : 1990,
+            "breakout_year" : 2010,
+            "breakout_role" : "The Last Song",
             "death_year" : NSNull()
         ]
     ],
-    
+
     [
         "Bradley Cooper" : [
-            "birth_year" : 1964,
-            "breakout_year" : 1987,
-            "breakout_role" : "Hangmen",
+            "birth_year" : 1975,
+            "breakout_year" : 2001,
+            "breakout_role" : "Wet Hot American Summer",
             "death_year" : NSNull()
         ]
     ],
     
     [
         "Sienna Miller" : [
-            "birth_year" : 1964,
-            "breakout_year" : 1987,
-            "breakout_role" : "Hangmen",
+            "birth_year" : 1981,
+            "breakout_year" : 2004,
+            "breakout_role" : "Layer Cake",
             "death_year" : NSNull()
         ]
     ],
     
     [
         "Kyle Gallner" : [
-            "birth_year" : 1964,
-            "breakout_year" : 1987,
-            "breakout_role" : "Hangmen",
+            "birth_year" : 1986,
+            "breakout_year" : 2001,
+            "breakout_role" : "Wet Hot American Summer",
             "death_year" : NSNull()
         ]
     ]
