@@ -12,6 +12,7 @@
 		3A5D93931F153F0A00BF7B81 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93921F153F0A00BF7B81 /* Person.swift */; };
 		3A5D93951F153F4600BF7B81 /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93941F153F4600BF7B81 /* Actor.swift */; };
 		3A5D93971F15419600BF7B81 /* President.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D93961F15419600BF7B81 /* President.swift */; };
+		3A5D939F1F16C93200BF7B81 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5D939E1F16C93200BF7B81 /* Genre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +34,7 @@
 		3A5D93921F153F0A00BF7B81 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		3A5D93941F153F4600BF7B81 /* Actor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
 		3A5D93961F15419600BF7B81 /* President.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = President.swift; sourceTree = "<group>"; };
+		3A5D939E1F16C93200BF7B81 /* Genre.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				3A5D93871F14282700BF7B81 /* main.swift */,
+				3A5D939E1F16C93200BF7B81 /* Genre.swift */,
 				3A5D93901F14653C00BF7B81 /* Movie.swift */,
 				3A5D93921F153F0A00BF7B81 /* Person.swift */,
 				3A5D93941F153F4600BF7B81 /* Actor.swift */,
@@ -136,6 +139,7 @@
 				3A5D93931F153F0A00BF7B81 /* Person.swift in Sources */,
 				3A5D93911F14653C00BF7B81 /* Movie.swift in Sources */,
 				3A5D93881F14282700BF7B81 /* main.swift in Sources */,
+				3A5D939F1F16C93200BF7B81 /* Genre.swift in Sources */,
 				3A5D93951F153F4600BF7B81 /* Actor.swift in Sources */,
 				3A5D93971F15419600BF7B81 /* President.swift in Sources */,
 			);

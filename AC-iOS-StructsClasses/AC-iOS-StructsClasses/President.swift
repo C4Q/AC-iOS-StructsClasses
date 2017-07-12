@@ -9,19 +9,19 @@
 import Foundation
 
 class President: Person {
-    var yearEnteredOffice: Int
-    var yearLeftOffice: Int
-    
-    init(yearEntered: Int, yearLeft: Int) {
-        self.yearLeftOffice = yearLeft
-        self.yearEnteredOffice = yearEntered
-    }
-    
-    func inOffice(_ year: Int) -> Bool {
-        if year >= yearEnteredOffice && year <= yearLeftOffice {
-            return true
-        } else {
-            return false
-        }
-    }
+//    var yearEnteredOffice: Int
+//    var yearLeftOffice: Int
+//    
+//    init(yearEntered: Int, yearLeft: Int) {
+//        self.yearLeftOffice = yearLeft
+//        self.yearEnteredOffice = yearEntered
+//    }
+//    
+//    func inOffice(_ year: Int) -> Bool {
+//        if year >= yearEnteredOffice && year <= yearLeftOffice {
+//            return true
+//        } else {
+//            return false
+//        }
+//    }
 }
