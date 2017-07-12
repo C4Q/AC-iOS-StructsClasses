@@ -11,11 +11,11 @@ import Foundation
 struct Movie {
     var name: String
     var year: Int
-    var genre: String
+    var genre: Genre
     var cast: [Actor]
     var description: String
     
-    init(name: String, year: Int, genre: String, cast: [Actor], description: String) {
+    init(name: String, year: Int, genre: Genre, cast: [Actor], description: String) {
         self.name = name
         self.year = year
         self.genre = genre
@@ -25,7 +25,7 @@ struct Movie {
     
     init?(dict: [String:Any]) {
         if let name = dict["name"] as? String,
-            let genre = dict["genre"] as? String,
+            let genreString = dict["genre"] as? String,
             let year = dict["year"] as? Int,
             let description = dict["description"] as? String,
             let castStringArray = dict["cast"] as? [String] {
@@ -33,12 +33,23 @@ struct Movie {
             let actors = Movie.getCastMembers(in: castStringArray)
             
             self.name = name
-            self.genre = genre
+            self.genre = Movie.genreFrom(string: genreString)
             self.year = year
             self.description = description
             self.cast = actors
         } else {
             return nil
+        }
+    }
+    
+    static func genreFrom(string: String) -> Genre {
+        switch string {
+        case string where string == Genre.action.rawValue:
+            return Genre.action
+        case string where string == Genre.animation.rawValue:
+            return Genre.animation
+        default:
+            return Genre.drama
         }
     }
     

@@ -71,7 +71,7 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 1. Work the `Actor` class into the `Movie` object by making `cast` type `[Actor]` and populating it.
 1. Add a new Swift file: **Genre.swift**
 1. Create an enumeration called `Genre` *(inside of Genre.swift)*
-1. Make the `genre` field in `Movie` of type `Genre`.
+1. Make the `genre` property in `Movie` of type `Genre`.
 1. Re-work the original homework based on our "array of dictionaries" to work with the new array of objects. Here are the problems:
 
 	* a. Print the name of the first movie.

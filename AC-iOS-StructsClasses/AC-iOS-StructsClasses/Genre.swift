@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Genre {
+enum Genre: String {
     case animation
     case action
     case drama
