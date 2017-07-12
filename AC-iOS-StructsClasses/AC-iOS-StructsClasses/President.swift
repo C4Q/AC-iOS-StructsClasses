@@ -25,30 +25,20 @@ class President: Person {
             return false
         }
     }
+    
+    convenience init?(with dict: [String:Any?]) {
+        if let name = dict["name"] as? String,
+            let yearEntered = dict["year_entered"] as? Int,
+            let yearLeft = dict["year_left"] as? Int,
+            let birthYear = dict["birth_year"] as? Int {
+            
+            let deathYear = dict["death_year"] as? Int ?? nil
+            
+            self.init(name: name, yearEntered: yearEntered, yearLeft: yearLeft, birthYear: birthYear, deathYear: deathYear)
+        }
+        else {
+            return nil
+        }
+    }
 }
 
-// MARK: President Data
-
-var presidentData: [[String:[String:Any?]]] = [
-    ["Bill Clinton" : [
-        "year_entered" : 1993,
-        "year_left" : 2000,
-        "birth_year" : 0,
-        "death_year" : nil
-        ]
-    ],
-    ["George W. Bush" : [
-        "year_entered" : 2001,
-        "year_left" : 2008,
-        "birth_year" : 0,
-        "death_year" : nil
-        ]
-    ],
-    ["Barack Obama" : [
-        "year_entered" : 2009,
-        "year_left" : 2016,
-        "birth_year" : 0,
-        "death_year" : nil
-        ]
-    ]
-]

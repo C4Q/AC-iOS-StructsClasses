@@ -8,6 +8,8 @@
 
 import Foundation
 
+// MARK: - Movie Data
+
 var movies: [[String:Any]] = [
     [
         "name": "Minions",
@@ -74,14 +76,23 @@ var movies: [[String:Any]] = [
     ]
 ]
 
+
+
+print("PART 1 *****************")
 var swiftMovies: [Movie] = []
 
+// Populate an array of Movie structs converted from the familiar array of dictionaries.
 for movieDict in movies {
     if let movie = Movie(from: movieDict) {
         swiftMovies.append(movie)
     }
 }
 
+// For each movie in the Movie array, print the name of each movie and associated cast on a single line. Be sure not to print the array of cast members, only the string elements.
+
+
+// MARK: - PART 2
+print("PART 2 *****************")
 // a. Print the name of the first movie.
 print("********** A ***********", terminator: "\n\n")
 print(swiftMovies[0].name)
@@ -174,3 +185,54 @@ print()
 for movie in moviesSortedByGenre {
     print(movie)
 }
+
+// MARK: - PART 3
+
+// MARK: - President Data
+
+var presidentData: [[String:Any?]] = [
+    [
+        "name" : "Bill Clinton",
+        "year_entered" : 1993,
+        "year_left" : 2000,
+        "birth_year" : 0,
+        "death_year" : nil
+    ],
+    [
+        "name" : "George W. Bush",
+        "year_entered" : 2001,
+        "year_left" : 2008,
+        "birth_year" : 0,
+        "death_year" : nil
+    ],
+    [
+        "name" : "Barack Obama",
+        "year_entered" : 2009,
+        "year_left" : 2016,
+        "birth_year" : 0,
+        "death_year" : nil
+    ]
+]
+
+print()
+print("PART 3 *****************")
+// Build a presidents array of type [President] (from the presidentData array above)
+var presidents: [President] = []
+
+for presidentInfoDict in presidentData {
+    if let president = President(with: presidentInfoDict) {
+        presidents.append(president)
+    }
+}
+
+// Build the presidentsByYear dictionary based on the presidents array. Your output dictionary should contain a key for every relevant year and use the inOffice method on President as the return for each value
+
+var presidentsByYear: [Int:String] = [:]
+
+for president in presidents {
+    if president.inOffice(president.yearEnteredOffice) {
+        presidentsByYear[president.yearEnteredOffice] = president.name
+    }
+}
+
+print(presidentsByYear)
