@@ -23,7 +23,7 @@ struct Movie {
         self.description = description
     }
     
-    init?(dict: [String:Any]) {
+    init?(from dict: [String:Any]) {
         if let name = dict["name"] as? String,
             let genreString = dict["genre"] as? String,
             let year = dict["year"] as? Int,
