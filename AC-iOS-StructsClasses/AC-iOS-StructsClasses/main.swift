@@ -74,6 +74,8 @@ var movies: [[String:Any]] = [
     ]
 ]
 
+// MARK: - PART 1
+
 var swiftMovies: [Movie] = []
 
 for movieDict in movies {
@@ -86,5 +88,17 @@ for movieDict in movies {
         swiftMovies.append(movieObject)
     }
 }
-print(swiftMovies)
 
+//For each movie in the Movie array, print the name of each movie and associated cast on a single line. Be sure not to print the array of cast members, only the string elements.
+
+/*Expeted Output:
+Minions: Sandra Bullock, Jon Hamm, Michael Keaton
+Shrek: Mike Myers, Eddie Murphy, Cameron Diaz
+.
+.
+.
+*/
+
+for movie in swiftMovies {
+    print("\(movie.name): \(movie.cast.joined(separator: ", "))")
+}
