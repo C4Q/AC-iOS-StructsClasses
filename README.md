@@ -61,12 +61,14 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 
 ### Part 2 - Actors are People Too!
 
+1. Create a failable convenience initializer `convenience init?(with dict: [String:Any])` for the `Movie` class that takes in a dictionary, and uses the values of the input dictionary to initialize a `Movie` object.
+1. Go back to the `for` loop in Part 1 where we iterate through the `movies` array. Rewrite the body of the loop such that it creates a `Movie` object, for each dictionary in the `movies` array, using the new convenienve initializer.
 1. Add a new Swift file: **Person.swift** 
 	* Repeat instructions in Part 1 - Step 1, naming your file `Person` (instead of `Movie`)
-1. Create a `Person` class *(inside of Person.swift)*. 
+1. In Person.swift, create a `Person` class. 
 1. Add a new Swift file: **Actor.swift** 
 	* Repeat instructions in Part 1 - Step 1, naming your file `Actor` (instead of `Movie`)
-1. Create an `Actor` class with `Person` as its parent *(inside of Actor.swift)*. 
+1. In Actor.swift, create an `Actor` class with `Person` as its parent. 
 	* Add two properties, `breakoutYear` and  `breakoutRole`. 
 1. Work the `Actor` class into the `Movie` object by making `cast` type `[Actor]` and populating it.
 1. Add a new Swift file: **Genre.swift**
