@@ -61,12 +61,14 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 
 ### Part 2 - Actors are People Too!
 
+1. Create a failable convenience initializer `convenience init?(with dict: [String:Any])` for the `Movie` class that takes in a dictionary, and uses the values of the input dictionary to initialize a `Movie` object.
+1. Go back to the `for` loop in Part 1 where we iterate through the `movies` array. Rewrite the body of the loop such that it creates a `Movie` object, for each dictionary in the `movies` array, using the new convenienve initializer.
 1. Add a new Swift file: **Person.swift** 
 	* Repeat instructions in Part 1 - Step 1, naming your file `Person` (instead of `Movie`)
-1. Create a `Person` class *(inside of Person.swift)*. 
+1. In Person.swift, create a `Person` class. 
 1. Add a new Swift file: **Actor.swift** 
 	* Repeat instructions in Part 1 - Step 1, naming your file `Actor` (instead of `Movie`)
-1. Create an `Actor` class with `Person` as its parent *(inside of Actor.swift)*. 
+1. In Actor.swift, create an `Actor` class with `Person` as its parent. 
 	* Add two properties, `breakoutYear` and  `breakoutRole`. 
 1. Work the `Actor` class into the `Movie` object by making `cast` type `[Actor]` and populating it.
 1. Add a new Swift file: **Genre.swift**
@@ -90,7 +92,7 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 
 	* d. Iterate over all movies. Inside the loop use switch on `genre`. Print each title and add an appropriate emoji to represent its genre.
 
-	* e. In code, not by literal initialization, create a new dictionary called `moviesByName` of type [String:[String:Any]]. Copy the elements of movies, adding each to `moviesByName` with the name as key. Sort by name.
+	* e. In code, not by literal initialization, create a new dictionary called `moviesByName` of type `[String:[String:Any]]`. Copy the elements of movies, adding each to `moviesByName` with the name as key. Sort by name.
 
 	* f. Do the same thing as in (e) for year and genre, creating a new dictionary for each one. What happens, and why? How might you change your approach?
 
@@ -102,15 +104,27 @@ Let's create a movie object based on the data structure we used in [Homework #2]
 
 1. Add a new Swift file: **President.swift** 
 	* Repeat instructions in Part 1 - Step 1, naming your file `President` (instead of `Movie`)
-1. Create a `President` class with `Person` as its parent *(inside of President.swift)*. Add two properties, `yearEnteredOffice` and `yearLeftOffice`.
+1. Create a `President` class with `Person` as its parent *(inside of President.swift)*. 
+	* Add two properties, `yearEnteredOffice` and `yearLeftOffice`.
 1. Now that we have a `President` class, let's create an instance method `inOffice(Int) -> Bool`.
-1. Build a `presidents` array (of type: [President]) by processing this array of Strings:
+1. Build a `presidents` array of type `[President]` by processing this array of Strings:
 
 	```swift
 	presidentData = ["1993, 2000, Bill Clinton", "2001, 2008, George W. Bush", "2009, 2016, Barack Obama"]
 	```
 	
-1. Build the `presidentsByYear` dictionary based on the `presidents` array. Your output dictionary should contain a key for every relevant year and use the `inOffice` method on `President`.
+1. Using the `presidents` array, and the `inOffice` method, print a statement that indicates whether each president was in office or not for each year between 1992-2008.
+
+```swift
+//Expected Output:
+/*
+ 1992 Bill Clinton - not in office, George W. Bush - not in office, Barack Obama - not in office
+ 1993 Bill Clinton - in office, George W. Bush - not in office, Barack Obama - not in office
+ 1994 Bill Clinton - in office, George W. Bush - not in office, Barack Obama - not in office
+ .
+ .
+ */
+```
 
 #### Find the Complete Project in the Solution Branch of this repo.
 
