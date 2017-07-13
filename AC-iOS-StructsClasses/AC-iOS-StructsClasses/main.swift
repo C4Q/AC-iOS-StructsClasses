@@ -76,9 +76,10 @@ var movies: [[String:Any]] = [
     ]
 ]
 
+// MARK: - PART 1
 
+print("\nPART 1 *****************")
 
-print("PART 1 *****************")
 var swiftMovies: [Movie] = []
 
 // Populate an array of Movie structs converted from the familiar array of dictionaries.
@@ -90,18 +91,24 @@ for movieDict in movies {
 
 // For each movie in the Movie array, print the name of each movie and associated cast on a single line. Be sure not to print the array of cast members, only the string elements.
 
-
 // MARK: - PART 2
-print("PART 2 *****************")
+
+print("\nPART 2 *****************")
+
+print("********** A ***********", terminator: "\n")
+
 // a. Print the name of the first movie.
-print("********** A ***********", terminator: "\n\n")
 print(swiftMovies[0].name)
 
+print("\n********** B ***********", terminator: "\n")
+
 // b. Print a list of all movie names, preferably on one line.
-print("********** B ***********", terminator: "\n\n")
 for movie in swiftMovies {
     print(movie.name)
 }
+
+
+print("\n********** C ***********", terminator: "\n")
 
 //* c. Print a list of all movie years and names (each on a new line) as follows:
 //```
@@ -111,13 +118,14 @@ for movie in swiftMovies {
 //.
 //.
 //```
-print("********** C ***********", terminator: "\n\n")
+
 for movie in swiftMovies {
     print("\(movie.year): \(movie.name)")
 }
 
+print("\n********** D ***********")
+
 //* d. Iterate over all movies. Inside the loop use switch on `genre`. Print each title and add an appropriate emoji to represent its genre.
-print("********** D ***********")
 let animationEmoji = "\u{1f430}"
 let actionEmoji = "\u{1f4a5}"
 let dramaEmoji = "\u{1f3ad}"
@@ -133,8 +141,8 @@ for movie in swiftMovies {
     }
 }
 
+print("\n********** E ***********", terminator: "\n")
 //* e. In code, not by literal initialization, create a new dictionary called `moviesByName` of type [String:[String:Any]]. Copy the elements of movies, adding each to `moviesByName` with the name as key. Sort by name.
-print("********** E ***********", terminator: "\n\n")
 var moviesByName: [String:[String:Any]] = [:]
 
 for movie in swiftMovies {
@@ -147,12 +155,11 @@ for movie in swiftMovies {
 }
 
 let alphabeticallySortedMovies = Array(moviesByName).sorted { ($0.0 < $1.0) }
-
 print(alphabeticallySortedMovies)
 
-//* f. Do the same thing as in (e) for year and genre, creating a new dictionary for each one. What happens, and why? How might you change your approach?
-print("********** F ***********", terminator: "\n\n")
+print("\n********** F ***********", terminator: "\n")
 
+//* f. Do the same thing as in (e) for year and genre, creating a new dictionary for each one. What happens, and why? How might you change your approach?
 var moviesByYear: [Int:[String:Any]] = [:]
 var moviesByGenre: [Genre:[String:Any]] = [:]
 
@@ -214,8 +221,8 @@ var presidentData: [[String:Any?]] = [
     ]
 ]
 
-print()
-print("PART 3 *****************")
+
+print("\nPART 3 *****************")
 // Build a presidents array of type [President] (from the presidentData array above)
 var presidents: [President] = []
 
@@ -225,14 +232,43 @@ for presidentInfoDict in presidentData {
     }
 }
 
-// Build the presidentsByYear dictionary based on the presidents array. Your output dictionary should contain a key for every relevant year and use the inOffice method on President as the return for each value
+// Using the presidents array, and the inOffice method, print a statement that indicates whether each president was in office or not for each year between 1992-2008.
 
-var presidentsByYear: [Int:String] = [:]
+//Expected Output:
+/*
+ 1992 Bill Clinton - not in office, George W. Bush - not in office, Barack Obama - not in office
+ 1993 Bill Clinton - in office, George W. Bush - not in office, Barack Obama - not in office
+ 1994 Bill Clinton - in office, George W. Bush - not in office, Barack Obama - not in office
+ .
+ .
+ */
 
-for president in presidents {
-    if president.inOffice(president.yearEnteredOffice) {
-        presidentsByYear[president.yearEnteredOffice] = president.name
+var startYear = 1992
+let endYear = 2008
+var output = ""
+
+while startYear <= endYear {
+    for i in 0..<presidents.count {
+        
+        let president = presidents[i]
+        let presidentName = president.name
+        
+
+        if president.inOffice(startYear) && i == 0 {
+            output += "\(startYear) \(presidentName) - in office, "
+        } else if president.inOffice(startYear) && i > 0 && i < presidents.count - 1 {
+            output += "\(presidentName) - in office, "
+        } else if president.inOffice(startYear) && i == presidents.count - 1 {
+            output += "\(presidentName) - in office"
+        } else if !president.inOffice(startYear) && i == 0 {
+            output += "\(startYear) \(presidentName) - not in office, "
+        } else if !president.inOffice(startYear) && i > 0 && i < presidents.count - 1 {
+            output += "\(presidentName) - not in office, "
+        } else if !president.inOffice(startYear) && i == presidents.count - 1 {
+            output += "\(presidentName) - not in office"
+        }
     }
+    print(output)
+    output = ""
+    startYear += 1
 }
-
-print(presidentsByYear)
