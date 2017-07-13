@@ -74,7 +74,25 @@ var movies: [[String:Any]] = [
     ]
 ]
 
+// MARK: - PART 1
+
 var swiftMovies: [Movie] = []
+
+//For each movie in the Movie array, print the name of each movie and associated cast on a single line. Be sure not to print the array of cast members, only the string elements.
+/*Expeted Output:
+ Minions: Sandra Bullock, Jon Hamm, Michael Keaton
+ Shrek: Mike Myers, Eddie Murphy, Cameron Diaz
+ .
+ .
+ .
+ */
+
+//for movie in swiftMovies {
+//    print("\(movie.name): \(movie.cast.joined(separator: ", "))")
+//}
+
+print("PART 2 ********************")
+// MARK: - PART 2
 
 for movieDict in movies {
     if let movie = Movie(from: movieDict) {
@@ -82,18 +100,18 @@ for movieDict in movies {
     }
 }
 
+print("\n********** A ***********")
 // a. Print the name of the first movie.
-print("********** A ***********", terminator: "\n\n")
 print(swiftMovies[0].name)
-        
+
+print("\n********** B ***********")
 // b. Print a list of all movie names, preferably on one line.
-print("********** B ***********", terminator: "\n\n")
 for movie in swiftMovies {
     print(movie.name)
 }
 
+print("\n********** C ***********")
 //* c. Print a list of all movie years and names (each on a new line) as follows:
-
 //```
 //2015: Minions
 //2001: Shrek
@@ -102,13 +120,13 @@ for movie in swiftMovies {
 //.
 //```
 
-print("********** C ***********", terminator: "\n\n")
 for movie in swiftMovies {
     print("\(movie.year): \(movie.name)")
 }
 
+print("\n********** D ***********")
 //* d. Iterate over all movies. Inside the loop use switch on `genre`. Print each title and add an appropriate emoji to represent its genre.
-print("********** D ***********")
+
 let animationEmoji = "\u{1f430}"
 let actionEmoji = "\u{1f4a5}"
 let dramaEmoji = "\u{1f3ad}"
@@ -124,8 +142,8 @@ for movie in swiftMovies {
     }
 }
 
+print("\n********** E ***********")
 //* e. In code, not by literal initialization, create a new dictionary called `moviesByName` of type [String:[String:Any]]. Copy the elements of movies, adding each to `moviesByName` with the name as key. Sort by name.
-print("********** E ***********", terminator: "\n\n")
 var moviesByName: [String:[String:Any]] = [:]
 
 for movie in swiftMovies {
@@ -141,9 +159,8 @@ let alphabeticallySortedMovies = Array(moviesByName).sorted { ($0.0 < $1.0) }
 
 print(alphabeticallySortedMovies)
 
+print("\n********** F ***********")
 //* f. Do the same thing as in (e) for year and genre, creating a new dictionary for each one. What happens, and why? How might you change your approach?
-
-print("********** F ***********", terminator: "\n\n")
 
 var moviesByYear: [Int:[String:Any]] = [:]
 var moviesByGenre: [Genre:[String:Any]] = [:]
