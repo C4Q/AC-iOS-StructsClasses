@@ -76,6 +76,227 @@ var movies: [[String:Any]] = [
     ]
 ]
 
+// MARK: Actor Data
+
+private var actorData: [String:[String:Any?]] =
+    [
+        "Sandra Bullock" : [
+            "birth_year" : 1964,
+            "breakout_year" : 1987,
+            "breakout_role" : "Hangmen",
+            "death_year" : nil
+        ],
+        
+        "Jon Hamm": [
+            "birth_year" : 1971 as AnyObject,
+            "breakout_year" : 2000 as AnyObject,
+            "breakout_role" : "Space Cowboys",
+            "death_year" : nil
+        ],
+        
+        "Michael Keaton" : [
+            "birth_year" : 1951,
+            "breakout_year" : 1982,
+            "breakout_role" : "Night Shift",
+            "death_year" : nil
+        ],
+        
+        "Mike Myers" : [
+            "birth_year" : 1963,
+            "breakout_year" : 1987,
+            "breakout_role" : "Wayne's World",
+            "death_year" : nil
+        ],
+        
+        "Eddie Murphy" : [
+            "birth_year" : 1961,
+            "breakout_year" : 1980,
+            "breakout_role" : "Saturday Night Live",
+            "death_year" : nil
+        ],
+        
+        "Cameron Diaz" : [
+            "birth_year" : 1972,
+            "breakout_year" : 1994,
+            "breakout_role" : "The Mask",
+            "death_year" : nil
+        ],
+        
+        "Ginnifer Goodwin" : [
+            "birth_year" : 1978,
+            "breakout_year" : 2006,
+            "breakout_role" : "Big Love",
+            "death_year" : nil
+        ],
+        
+        "Jason Bateman" : [
+            "birth_year" : 1969,
+            "breakout_year" : 1980,
+            "breakout_role" : "Little House on the Prairie",
+            "death_year" : nil
+        ],
+        
+        "Idris Elba" : [
+            "birth_year" : 1972,
+            "breakout_year" : 2002,
+            "breakout_role" : "The Wire",
+            "death_year" : nil
+        ],
+        
+        "Sam Worthington" : [
+            "birth_year" : 1976,
+            "breakout_year" : 2004,
+            "breakout_role" : "Somersault",
+            "death_year" : nil
+        ],
+        
+        "Zoe Saldana" : [
+            "birth_year" : 1978,
+            "breakout_year" : 1999,
+            "breakout_role" : "Law & Order",
+            "death_year" : nil
+        ],
+        
+        "Sigourney Weaver" : [
+            "birth_year" : 1949,
+            "breakout_year" : 1977,
+            "breakout_role" : "Annie Hall",
+            "death_year" : nil
+        ],
+        
+        "Christian Bale" : [
+            "birth_year" : 1974,
+            "breakout_year" : 1987,
+            "breakout_role" : "Empire of the Sun",
+            "death_year" : nil
+        ],
+        
+        "Heath Ledger" : [
+            "birth_year" : 1979,
+            "breakout_year" : 1999,
+            "breakout_role" : "10 Things I Hate About You",
+            "death_year" : 2008
+        ],
+        
+        "Aaron Eckhart" : [
+            "birth_year" : 1968,
+            "breakout_year" : 2000,
+            "breakout_role" : "Eric Brockovich",
+            "death_year" : nil
+        ],
+        
+        "Shia LaBeouf" : [
+            "birth_year" : 1986,
+            "breakout_year" : 1998,
+            "breakout_role" : "The Christmas Path",
+            "death_year" : nil
+        ],
+        
+        "Megan Fox" : [
+            "birth_year" : 1986,
+            "breakout_year" : 2004,
+            "breakout_role" : "Confessions of a Teenaeg Drama Queen",
+            "death_year" : nil
+        ],
+        
+        "Josh Duhamel" : [
+            "birth_year" : 1972,
+            "breakout_year" : 1999,
+            "breakout_role" : "All My Children",
+            "death_year" : nil
+        ],
+        
+        "Leonardo DiCaprio" : [
+            "birth_year" : 1974,
+            "breakout_year" : 1991,
+            "breakout_role" : "Critters 3",
+            "death_year" : nil
+        ],
+        
+        "Kate Winslet" : [
+            "birth_year" : 1975,
+            "breakout_year" : 1994,
+            "breakout_role" : "Heavenly Creatures",
+            "death_year" : nil
+        ],
+        
+        "Billy Zane" : [
+            "birth_year" : 1966,
+            "breakout_year" : 1985,
+            "breakout_role" : "Back to the Future",
+            "death_year" : nil
+        ],
+        
+        "Jennifer Lawrence" : [
+            "birth_year" : 1990,
+            "breakout_year" : 2007,
+            "breakout_role" : "The Bill Engvall Show",
+            "death_year" : nil
+        ],
+        
+        "Josh Hutcherson" : [
+            "birth_year" : 1992,
+            "breakout_year" : 2002,
+            "breakout_role" : "Houseblend",
+            "death_year" : nil
+        ],
+        
+        "Liam Hemsworth" : [
+            "birth_year" : 1990,
+            "breakout_year" : 2010,
+            "breakout_role" : "The Last Song",
+            "death_year" : nil
+        ],
+        
+        "Bradley Cooper" : [
+            "birth_year" : 1975,
+            "breakout_year" : 2001,
+            "breakout_role" : "Wet Hot American Summer",
+            "death_year" : nil
+        ],
+        
+        "Sienna Miller" : [
+            "birth_year" : 1981,
+            "breakout_year" : 2004,
+            "breakout_role" : "Layer Cake",
+            "death_year" : nil
+        ],
+        
+        "Kyle Gallner" : [
+            "birth_year" : 1986,
+            "breakout_year" : 2001,
+            "breakout_role" : "Wet Hot American Summer",
+            "death_year" : nil
+        ]
+]
+
+// MARK: - President Data
+
+var presidentData: [[String:Any?]] = [
+    [
+        "name" : "Bill Clinton",
+        "year_entered" : 1993,
+        "year_left" : 2000,
+        "birth_year" : 0,
+        "death_year" : nil
+    ],
+    [
+        "name" : "George W. Bush",
+        "year_entered" : 2001,
+        "year_left" : 2008,
+        "birth_year" : 0,
+        "death_year" : nil
+    ],
+    [
+        "name" : "Barack Obama",
+        "year_entered" : 2009,
+        "year_left" : 2016,
+        "birth_year" : 0,
+        "death_year" : nil
+    ]
+]
+
+
 // MARK: - PART 1
 
 print("\nPART 1 *****************")
@@ -258,39 +479,26 @@ for movie in moviesSortedByGenre {
 
 // MARK: - PART 3
 
-// MARK: - President Data
-
-var presidentData: [[String:Any?]] = [
-    [
-        "name" : "Bill Clinton",
-        "year_entered" : 1993,
-        "year_left" : 2000,
-        "birth_year" : 0,
-        "death_year" : nil
-    ],
-    [
-        "name" : "George W. Bush",
-        "year_entered" : 2001,
-        "year_left" : 2008,
-        "birth_year" : 0,
-        "death_year" : nil
-    ],
-    [
-        "name" : "Barack Obama",
-        "year_entered" : 2009,
-        "year_left" : 2016,
-        "birth_year" : 0,
-        "death_year" : nil
-    ]
-]
-
 
 print("\nPART 3 *****************")
 // Build a presidents array of type [President] (from the presidentData array above)
 var presidents: [President] = []
 
 for presidentInfoDict in presidentData {
-    if let president = President(with: presidentInfoDict) {
+    if let name = presidentInfoDict["name"] as? String,
+        let yearEntered = presidentInfoDict["year_entered"] as? Int,
+        let yearLeft = presidentInfoDict["year_left"] as? Int,
+        let birthYear = presidentInfoDict["birth_year"] as? Int,
+        let deathYear = presidentInfoDict["death_year"] as? Int? {
+        
+        var president = President()
+        
+        president.name = name
+        president.birthYear = birthYear
+        president.deathYear = deathYear ?? nil
+        president.yearEnteredOffice = yearEntered
+        president.yearLeftOffice = yearLeft
+        
         presidents.append(president)
     }
 }

@@ -9,8 +9,7 @@
 import Foundation
 
 class Person {
-    var name: String
-    var birthYear: Int
+    var name: String = "Queen Latifah"
+    var birthYear: Int = 1984
     var deathYear: Int?
-
 }

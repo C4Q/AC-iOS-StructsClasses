@@ -9,8 +9,6 @@
 import Foundation
 
 class Actor: Person {
-    var breakoutYear: Int
-    var breakoutRole: String
-    
-  
+    var breakoutYear: Int = 1999
+    var breakoutRole: String = "B-List Movie"
 }
