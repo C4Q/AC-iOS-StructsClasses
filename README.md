@@ -126,6 +126,22 @@ Let's create a movie object based on the data structure we used in [Homework #2]
  */
 ```
 
+1. Iterate over all movies and print a formatted blurb about each one. Use this output of the first movie as a guide:
+
+```swift 
+Minions came out in 2015. It was an animation staring Sandra Bullock, Jon Hamm, and Michael Keaton. Barack Obama was president that year.
+```
+
+**Notes**
+
+* Output should generate "an animation" in contrast to "a drama"
+* Similarly notice the "and" before the last member of the cast listed.
+
+Get it to work any which way you can but try your best to follow these **guidelines:
+
+ * Don't use forced unwrapping
+ * Use multiple bindings in one "if let" (no pyramid of doom)
+
 #### Find the Complete Project in the Solution Branch of this repo.
 
 
