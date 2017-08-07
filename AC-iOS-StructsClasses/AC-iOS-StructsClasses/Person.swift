@@ -12,10 +12,5 @@ class Person {
     var name: String
     var birthYear: Int
     var deathYear: Int?
-    
-    init(name: String, birthYear: Int, deathYear: Int?) {
-        self.name = name
-        self.birthYear = birthYear
-        self.deathYear = deathYear
-    }
+
 }

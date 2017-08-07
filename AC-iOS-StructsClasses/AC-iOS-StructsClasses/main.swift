@@ -96,11 +96,61 @@ var swiftMovies: [Movie] = []
 //}
 
 // Populate an array of Movie structs converted from the familiar array of dictionaries.
+// Go back to the `for` loop in Part 1 where we iterate through the `movies` array. Rewrite the body of the loop such that it creates a `Movie` object, for each dictionary in the `movies` array.
+
 for movieDict in movies {
-    if let movie = Movie(from: movieDict) {
-        swiftMovies.append(movie)
+    if let movieName = movieDict["name"] as? String,
+        let movieYear = movieDict["year"] as? Int,
+        let movieCast = movieDict["cast"] as? [String],
+        let movieGenre = movieDict["genre"] as? String,
+        let movieDescription = movieDict["description"] as? String {
+        
+        var genre: Genre?
+        
+        switch movieGenre {
+        case movieGenre where movieGenre == Genre.action.rawValue:
+            genre = Genre(rawValue: movieGenre)
+        case movieGenre where movieGenre == Genre.animation.rawValue:
+            genre = Genre(rawValue: movieGenre)
+        case movieGenre where movieGenre == Genre.drama.rawValue:
+            genre = Genre(rawValue: movieGenre)
+        default:
+            break
+            
+        }
+        
+        var cast: [Actor] = []
+        
+        for castMember in movieCast {
+            if let actorInfoDict = actorData[castMember] {
+                if let birthYear = actorInfoDict["birth_year"] as? Int,
+                    let breakoutYear = actorInfoDict["breakout_year"] as? Int,
+                    let breakoutRole = actorInfoDict["breakout_role"] as? String,
+                    let deathYear = actorInfoDict["death_year"] as? Int? {
+                    
+                    
+                    let actor = Actor() // Initialize actor with default property values
+                    
+                    //Reset property values
+                    actor.breakoutRole = breakoutRole
+                    actor.breakoutYear = breakoutYear
+                    actor.birthYear = birthYear
+                    actor.name = castMember
+                    actor.deathYear = deathYear ?? nil
+                    
+                    cast.append(actor)
+                }
+            }
+        }
+        
+        
+        if let unwrappedGenre = genre {
+            let movie = Movie(name: movieName, year: movieYear, genre: unwrappedGenre, cast: cast, description: movieDescription)
+            swiftMovies.append(movie)
+        }
     }
 }
+
 
 // For each movie in the Movie array, print the name of each movie and associated cast on a single line. Be sure not to print the array of cast members, only the string elements.
 
